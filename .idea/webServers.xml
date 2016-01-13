@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d8942655-4f9e-4393-8748-2df2714c303c" name="big.xgf.ren" url="http://big.xgf.ren">
+        <fileTransfer host="big.xgf.ren" port="21" rootFolder="/home/xgf" password="df99df98df9adf93df98df9f" username="xgf">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
