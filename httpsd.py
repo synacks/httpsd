@@ -23,8 +23,9 @@ def get_token_from_dropbox(code):
 
     client = httplib.HTTPSConnection(host='api.dropboxapi.com', port=443, timeout=35)
     try:
-        client.request(method="POST", url="/1/oauth2/token", body=urllib.urlencode(params))
-        print "body: ", urllib.urlencode(params)
+        posturl = "/1/oauth2/token?" + urllib.urlencode(params)
+        client.request(method="POST", url=posturl)
+        print "posturl : ", posturl
         resp = client.getresponse().read()
         return resp
     except socket.timeout, e:
